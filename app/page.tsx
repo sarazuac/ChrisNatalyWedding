@@ -24,7 +24,7 @@ export default function Home() {
             <div className="absolute -inset-4 border border-sage/40 -z-10 hidden md:block" />
             <div className="relative aspect-[2/3] overflow-hidden border border-line">
               <Image
-                src="/gallery/photo-11.jpg"
+                src="/gallery/photo-05.jpg"
                 alt={`${site.partnerOne} and ${site.partnerTwo}`}
                 fill
                 sizes="(min-width: 768px) 40vw, 80vw"
@@ -124,6 +124,29 @@ export default function Home() {
           >
             {t.ctaBand.button}
           </Link>
+        </Reveal>
+      </section>
+
+      {/* Gifts */}
+      <section className="bg-ivory py-20 px-6 text-center">
+        <Reveal>
+          <p className="text-[11px] tracking-label uppercase text-sage mb-4">
+            {t.registry.kicker}
+          </p>
+          <h2 className="font-display italic text-3xl md:text-4xl mb-5 text-ink">
+            {t.registry.cardTitle}
+          </h2>
+          <p className="text-ink-soft leading-relaxed max-w-md mx-auto mb-8">
+            {t.registry.cardBody}
+          </p>
+          <a
+            href={site.honeyfundUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block text-xs tracking-label uppercase px-8 py-4 bg-ink text-ivory hover:bg-sage transition-colors"
+          >
+            {t.registry.button}
+          </a>
         </Reveal>
       </section>
 

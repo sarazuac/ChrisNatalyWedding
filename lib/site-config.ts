@@ -26,7 +26,7 @@ export const site = {
       day: "sun",
       date: "06/06/2027",
       port: "Port Canaveral (Orlando), Florida",
-      arrival: "—",
+      arrival: "–",
       departure: "16:00",
     },
     {
@@ -55,35 +55,11 @@ export const site = {
       date: "10/06/2027",
       port: "Port Canaveral (Orlando), Florida",
       arrival: "07:00",
-      departure: "—",
+      departure: "–",
     },
   ],
 
-  registries: [
-    {
-      name: "Zola",
-      url: "https://www.zola.com/REPLACE_WITH_YOUR_REGISTRY",
-    },
-    {
-      name: "Amazon",
-      url: "https://www.amazon.com/wedding/REPLACE_WITH_YOUR_REGISTRY",
-    },
-    {
-      name: "Honeymoon Fund",
-      url: "https://www.zola.com/REPLACE_WITH_YOUR_FUND",
-    },
-  ],
-
-  hotels: [
-    {
-      name: "Hotel Near Port Canaveral",
-      url: "#",
-    },
-    {
-      name: "Orlando Airport Hotel",
-      url: "#",
-    },
-  ],
+  honeyfundUrl: "https://www.honeyfund.com/site/sarazua-suarez-2027",
 
   nav: [
     { href: "/", key: "home" },

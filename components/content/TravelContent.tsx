@@ -124,43 +124,6 @@ export default function TravelContent() {
         </Reveal>
       </section>
 
-      {/* Hotels */}
-      <section className="bg-ivory py-24 px-6">
-        <Reveal className="text-center mb-6">
-          <p className="text-[11px] tracking-label uppercase text-sage mb-4">
-            {t.travel.hotelsKicker}
-          </p>
-          <h2 className="font-display italic text-4xl md:text-5xl text-ink">
-            {t.travel.hotelsTitle}
-          </h2>
-        </Reveal>
-        <Reveal className="text-center mb-16">
-          <p className="text-ink-soft max-w-lg mx-auto">{t.travel.hotelsNote}</p>
-        </Reveal>
-
-        <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
-          {site.hotels.map((hotel, i) => (
-            <Reveal
-              key={hotel.name}
-              delay={i * 100}
-              className="bg-sand border border-line p-8 flex flex-col"
-            >
-              <h3 className="font-display italic text-xl mb-4 text-ink">
-                {hotel.name}
-              </h3>
-              <a
-                href={hotel.url}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-auto text-[11px] tracking-label uppercase text-ink border-b border-ink pb-1 self-start hover:text-sage hover:border-sage transition-colors"
-              >
-                {t.travel.learnMore}
-              </a>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {/* Good to know */}
       <section className="bg-sand py-24 px-6">
         <Reveal className="mx-auto max-w-2xl text-center">

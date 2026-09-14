@@ -30,22 +30,22 @@ export default function Nav() {
           solid ? "bg-ivory/95 backdrop-blur border-b border-line" : "bg-transparent"
         }`}
       >
-        <div className="mx-auto max-w-6xl px-6 md:px-10 h-20 flex items-center justify-between">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 h-20 flex items-center justify-between gap-x-10">
         <Link
           href="/"
-          className={`font-display italic text-2xl tracking-wide transition-colors ${
+          className={`shrink-0 whitespace-nowrap font-display italic text-2xl tracking-wide transition-colors ${
             solid ? "text-ink" : "text-ivory"
           }`}
         >
           {site.monogram}
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden xl:flex items-center gap-6">
           {site.nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`text-[11px] tracking-label uppercase transition-colors ${
+              className={`shrink-0 whitespace-nowrap text-[11px] tracking-label uppercase transition-colors ${
                 solid ? "text-ink-soft hover:text-ink" : "text-ivory/85 hover:text-ivory"
               } ${pathname === item.href ? (solid ? "text-sage" : "text-ivory") : ""}`}
             >
@@ -54,7 +54,7 @@ export default function Nav() {
           ))}
           <Link
             href="/rsvp"
-            className={`text-[11px] tracking-label uppercase px-5 py-2.5 border transition-colors ${
+            className={`shrink-0 whitespace-nowrap text-[11px] tracking-label uppercase px-5 py-2.5 border transition-colors ${
               solid
                 ? "border-ink text-ink hover:bg-ink hover:text-ivory"
                 : "border-ivory text-ivory hover:bg-ivory hover:text-ink"
@@ -62,10 +62,12 @@ export default function Nav() {
           >
             {t.nav.rsvp}
           </Link>
-          <LanguageToggle dark={!solid} />
+          <div className="shrink-0">
+            <LanguageToggle dark={!solid} />
+          </div>
         </nav>
 
-        <div className="lg:hidden flex items-center gap-3">
+        <div className="xl:hidden flex items-center gap-3">
           <LanguageToggle dark={!solid} />
           <button
             type="button"
@@ -99,7 +101,7 @@ export default function Nav() {
           containing block for `fixed` descendants, which would collapse this
           panel's positioning. Keeping it as a sibling avoids that. */}
       {open && (
-        <div className="lg:hidden fixed inset-0 top-20 z-40 bg-ivory overflow-y-auto">
+        <div className="xl:hidden fixed inset-0 top-20 z-40 bg-ivory overflow-y-auto">
           <nav className="flex flex-col items-center justify-center gap-7 min-h-full py-16">
             {site.nav.map((item) => (
               <Link

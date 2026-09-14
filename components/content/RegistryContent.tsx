@@ -17,27 +17,22 @@ export default function RegistryContent() {
       />
 
       <section className="bg-ivory py-24 px-6">
-        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-3">
-          {site.registries.map((registry, i) => (
-            <Reveal
-              key={registry.name}
-              delay={i * 100}
-              className="border border-line p-10 text-center flex flex-col items-center"
-            >
-              <h2 className="font-display italic text-2xl mb-6 text-ink">
-                {registry.name}
-              </h2>
-              <a
-                href={registry.url}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-auto text-[11px] tracking-label uppercase px-6 py-3 border border-ink text-ink hover:bg-ink hover:text-ivory transition-colors"
-              >
-                {t.registry.viewButton}
-              </a>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal className="mx-auto max-w-xl border border-line p-10 md:p-16 text-center">
+          <h2 className="font-display italic text-3xl md:text-4xl mb-6 text-ink">
+            {t.registry.cardTitle}
+          </h2>
+          <p className="text-ink-soft leading-relaxed mb-10 max-w-md mx-auto">
+            {t.registry.cardBody}
+          </p>
+          <a
+            href={site.honeyfundUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block text-xs tracking-label uppercase px-10 py-4 bg-ink text-ivory hover:bg-sage transition-colors"
+          >
+            {t.registry.button}
+          </a>
+        </Reveal>
       </section>
     </>
   );
