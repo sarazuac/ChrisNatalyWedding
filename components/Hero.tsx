@@ -17,12 +17,16 @@ export default function Hero() {
           {t.hero.kicker}
         </p>
 
-        <h1 className="font-display text-[15vw] leading-[0.95] sm:text-7xl md:text-8xl lg:text-9xl">
-          <span className="italic">{site.partnerOne}</span>
-          <span className="mx-3 md:mx-6 not-italic text-sage align-middle text-[10vw] sm:text-6xl md:text-7xl">
+        <h1 className="font-display flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-5 md:gap-7 leading-[0.95]">
+          <span className="italic text-[16vw] sm:text-7xl md:text-8xl lg:text-9xl">
+            {site.partnerOne}
+          </span>
+          <span className="not-italic text-sage text-[9vw] sm:text-5xl md:text-6xl lg:text-7xl">
             &amp;
           </span>
-          <span className="italic">{site.partnerTwo}</span>
+          <span className="italic text-[16vw] sm:text-7xl md:text-8xl lg:text-9xl">
+            {site.partnerTwo}
+          </span>
         </h1>
 
         <div className="mt-8 flex items-center gap-4 text-ivory/90">

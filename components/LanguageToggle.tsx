@@ -9,7 +9,7 @@ export default function LanguageToggle({ dark = false }: { dark?: boolean }) {
   const inactive = dark
     ? "text-ivory/70 hover:text-ivory"
     : "text-ink-soft hover:text-ink";
-  const active = dark ? "bg-ivory text-sea-deep" : "bg-ink text-ivory";
+  const active = dark ? "bg-ivory text-ink" : "bg-ink text-ivory";
 
   return (
     <div

@@ -53,7 +53,7 @@ const en = {
   connect: {
     kicker: "Stay Connected",
     title: "Join Our Facebook Group",
-    body: "We'll be sharing updates, packing tips, and cabin-mate coordination in our Facebook group leading up to the cruise.",
+    body: "Join to stay updated on packing tips, cabin-mate coordination, and information on excursions and other discounts leading up to the cruise.",
     button: "Join The Group",
   },
 
@@ -264,7 +264,7 @@ const es: typeof en = {
   connect: {
     kicker: "Mantente Conectado",
     title: "Únete A Nuestro Grupo De Facebook",
-    body: "Compartiremos actualizaciones, consejos para empacar y coordinación de camarotes en nuestro grupo de Facebook antes del crucero.",
+    body: "Únete para mantenerte al tanto de consejos para empacar, coordinación de camarotes e información sobre excursiones y otros descuentos antes del crucero.",
     button: "Unirme Al Grupo",
   },
 

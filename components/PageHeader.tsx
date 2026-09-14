@@ -10,14 +10,14 @@ export default function PageHeader({
   subtitle?: string;
 }) {
   return (
-    <section className="relative bg-sea-deep text-ivory pt-40 pb-20 md:pt-48 md:pb-28">
+    <section className="relative bg-sea-deep text-ink pt-40 pb-20 md:pt-48 md:pb-28">
       <div className="mx-auto max-w-4xl px-6 text-center">
-        <p className="text-[11px] tracking-label uppercase text-sage mb-5">
+        <p className="text-[11px] tracking-label uppercase text-ink/60 mb-5">
           {kicker}
         </p>
-        <h1 className="font-display italic text-5xl md:text-6xl">{title}</h1>
+        <h1 className="font-display italic text-5xl md:text-6xl text-ink">{title}</h1>
         {subtitle && (
-          <p className="mt-6 text-ivory/75 text-base md:text-lg max-w-xl mx-auto">
+          <p className="mt-6 text-ink/70 text-base md:text-lg max-w-xl mx-auto">
             {subtitle}
           </p>
         )}

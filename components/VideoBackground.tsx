@@ -27,7 +27,7 @@ export default function VideoBackground({
 
       {/* Legibility scrim */}
       <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/25 to-ink/60" />
-      <div className="absolute inset-0 bg-gradient-to-t from-sea-deep via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
     </>
   );
 }

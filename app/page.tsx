@@ -55,7 +55,7 @@ export default function Home() {
         </Reveal>
 
         <div className="mx-auto grid max-w-4xl gap-px overflow-hidden border border-line md:grid-cols-2 bg-line">
-          <Reveal className="bg-ivory p-10 md:p-12">
+          <Reveal className="bg-ivory p-8 md:p-12">
             <p className="text-[11px] tracking-label uppercase text-sage mb-3">
               {t.details.cruiseLine}
             </p>
@@ -66,7 +66,7 @@ export default function Home() {
               {site.cruiseLine} &middot; {t.details.durationValue}
             </p>
           </Reveal>
-          <Reveal delay={120} className="bg-ivory p-10 md:p-12">
+          <Reveal delay={120} className="bg-ivory p-8 md:p-12">
             <p className="text-[11px] tracking-label uppercase text-sage mb-3">
               {t.details.embarkation}
             </p>
@@ -94,17 +94,17 @@ export default function Home() {
       </section>
 
       {/* CTA band */}
-      <section className="relative bg-sea-deep text-ivory py-24 px-6 text-center overflow-hidden">
+      <section className="relative bg-sea-deep text-ink py-24 px-6 text-center overflow-hidden">
         <Reveal className="relative z-10">
-          <p className="text-[11px] tracking-label uppercase text-sage mb-5">
+          <p className="text-[11px] tracking-label uppercase text-ink/60 mb-5">
             {t.ctaBand.kicker}
           </p>
-          <h2 className="font-display italic text-4xl md:text-5xl mb-8">
+          <h2 className="font-display italic text-4xl md:text-5xl mb-8 text-ink">
             {t.ctaBand.title}
           </h2>
           <Link
             href="/rsvp"
-            className="inline-block text-xs tracking-label uppercase px-8 py-4 border border-ivory hover:bg-ivory hover:text-sea-deep transition-colors"
+            className="inline-block text-xs tracking-label uppercase px-8 py-4 border border-ink hover:bg-ink hover:text-sea-deep transition-colors"
           >
             {t.ctaBand.button}
           </Link>
