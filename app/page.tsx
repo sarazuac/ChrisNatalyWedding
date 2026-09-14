@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import Reveal from "@/components/Reveal";
@@ -17,18 +18,33 @@ export default function Home() {
       <Hero />
 
       {/* Welcome */}
-      <section className="bg-ivory pt-24 pb-20 px-6">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-[11px] tracking-label uppercase text-sage mb-6">
-            {t.welcome.kicker}
-          </p>
-          <p className="font-display italic text-2xl md:text-3xl leading-relaxed text-ink">
-            {t.welcome.quote}
-          </p>
-          <p className="mt-8 text-sm tracking-label uppercase text-ink-soft">
-            {site.partnerOne} &amp; {site.partnerTwo}
-          </p>
-        </Reveal>
+      <section className="bg-ivory py-20 md:py-28 px-6">
+        <div className="mx-auto max-w-5xl grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <Reveal className="relative mx-auto w-full max-w-sm md:max-w-none">
+            <div className="absolute -inset-4 border border-sage/40 -z-10 hidden md:block" />
+            <div className="relative aspect-[2/3] overflow-hidden border border-line">
+              <Image
+                src="/gallery/photo-11.jpg"
+                alt={`${site.partnerOne} and ${site.partnerTwo}`}
+                fill
+                sizes="(min-width: 768px) 40vw, 80vw"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+
+          <Reveal delay={100} className="text-center md:text-left">
+            <p className="text-[11px] tracking-label uppercase text-sage mb-6">
+              {t.welcome.kicker}
+            </p>
+            <p className="font-display italic text-2xl md:text-3xl leading-relaxed text-ink">
+              {t.welcome.quote}
+            </p>
+            <p className="mt-8 text-sm tracking-label uppercase text-ink-soft">
+              {site.partnerOne} &amp; {site.partnerTwo}
+            </p>
+          </Reveal>
+        </div>
       </section>
 
       {/* Countdown */}

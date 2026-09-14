@@ -21,7 +21,7 @@ export default function Hero() {
           <span className="italic text-[16vw] sm:text-7xl md:text-8xl lg:text-9xl">
             {site.partnerOne}
           </span>
-          <span className="not-italic text-sage text-[9vw] sm:text-5xl md:text-6xl lg:text-7xl">
+          <span className="not-italic text-[#4a5c42] text-[9vw] sm:text-5xl md:text-6xl lg:text-7xl">
             &amp;
           </span>
           <span className="italic text-[16vw] sm:text-7xl md:text-8xl lg:text-9xl">

@@ -24,12 +24,13 @@ export default function Nav() {
   const solid = scrolled || !isHome || open;
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-500 ${
-        solid ? "bg-ivory/95 backdrop-blur border-b border-line" : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto max-w-6xl px-6 md:px-10 h-20 flex items-center justify-between">
+    <>
+      <header
+        className={`fixed top-0 inset-x-0 z-50 transition-colors duration-500 ${
+          solid ? "bg-ivory/95 backdrop-blur border-b border-line" : "bg-transparent"
+        }`}
+      >
+        <div className="mx-auto max-w-6xl px-6 md:px-10 h-20 flex items-center justify-between">
         <Link
           href="/"
           className={`font-display italic text-2xl tracking-wide transition-colors ${
@@ -91,39 +92,42 @@ export default function Nav() {
           </button>
         </div>
       </div>
+      </header>
 
-      <div
-        className={`lg:hidden fixed inset-0 top-20 bg-ivory transition-[clip-path] duration-500 ease-out overflow-y-auto ${
-          open ? "[clip-path:circle(150%_at_100%_0%)]" : "[clip-path:circle(0%_at_100%_0%)]"
-        }`}
-      >
-        <nav className="flex flex-col items-center justify-center gap-7 min-h-full py-16">
-          {site.nav.map((item) => (
+      {/* Rendered outside <header> deliberately: header can get backdrop-blur
+          applied (via `solid`), and a backdrop-filter ancestor becomes the
+          containing block for `fixed` descendants, which would collapse this
+          panel's positioning. Keeping it as a sibling avoids that. */}
+      {open && (
+        <div className="lg:hidden fixed inset-0 top-20 z-40 bg-ivory overflow-y-auto">
+          <nav className="flex flex-col items-center justify-center gap-7 min-h-full py-16">
+            {site.nav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="font-display italic text-3xl text-ink"
+              >
+                {t.nav[item.key]}
+              </Link>
+            ))}
             <Link
-              key={item.href}
-              href={item.href}
+              href="/rsvp"
               onClick={() => setOpen(false)}
-              className="font-display italic text-3xl text-ink"
+              className="mt-4 text-xs tracking-label uppercase px-7 py-3 border border-ink text-ink"
             >
-              {t.nav[item.key]}
+              {t.nav.rsvp}
             </Link>
-          ))}
-          <Link
-            href="/rsvp"
-            onClick={() => setOpen(false)}
-            className="mt-4 text-xs tracking-label uppercase px-7 py-3 border border-ink text-ink"
-          >
-            {t.nav.rsvp}
-          </Link>
 
-          <div className="mt-6 flex flex-col items-center gap-3">
-            <span className="text-[10px] tracking-label uppercase text-ink-soft">
-              {t.langToggle.label}
-            </span>
-            <LanguageToggle />
-          </div>
-        </nav>
-      </div>
-    </header>
+            <div className="mt-6 flex flex-col items-center gap-3">
+              <span className="text-[10px] tracking-label uppercase text-ink-soft">
+                {t.langToggle.label}
+              </span>
+              <LanguageToggle />
+            </div>
+          </nav>
+        </div>
+      )}
+    </>
   );
 }

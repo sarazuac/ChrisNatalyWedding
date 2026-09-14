@@ -9,8 +9,8 @@ export const site = {
 
   // Countdown target: sail-away moment (Port Canaveral departs 16:00 on embarkation day).
   weddingDateISO: "2027-06-06T16:00:00",
-  weddingDateDisplayEn: "June 6–11, 2027",
-  weddingDateDisplayEs: "6–11 de junio de 2027",
+  weddingDateDisplayEn: "June 6–10, 2027",
+  weddingDateDisplayEs: "6–10 de junio de 2027",
 
   cruiseLine: "MSC Cruises",
   cruiseShip: "MSC Seashore",

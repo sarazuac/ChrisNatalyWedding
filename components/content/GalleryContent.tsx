@@ -5,12 +5,23 @@ import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 import { useLang } from "@/lib/i18n";
 
-// Placeholder tiles — replace the files in /public/gallery with your own
-// photos (same filenames, or update this list) to swap them in.
-const photos = Array.from({ length: 8 }, (_, i) => ({
-  src: `/gallery/placeholder-${i + 1}.svg`,
-  tall: [0, 2, 4, 6].includes(i),
-}));
+// Add more photos to /public/gallery and list them here (with their real
+// pixel dimensions, so the masonry layout and next/image sizing stay correct).
+const photos = [
+  { src: "/gallery/photo-01.jpg", width: 2048, height: 1365 },
+  { src: "/gallery/photo-02.jpg", width: 1366, height: 2049 },
+  { src: "/gallery/photo-03.jpg", width: 1024, height: 1536 },
+  { src: "/gallery/photo-04.jpg", width: 1366, height: 2049 },
+  { src: "/gallery/photo-05.jpg", width: 1690, height: 2048 },
+  { src: "/gallery/photo-06.jpg", width: 1024, height: 1536 },
+  { src: "/gallery/photo-07.jpg", width: 1366, height: 2049 },
+  { src: "/gallery/photo-08.jpg", width: 1366, height: 2049 },
+  { src: "/gallery/photo-09.jpg", width: 1366, height: 2049 },
+  { src: "/gallery/photo-10.jpg", width: 1366, height: 2049 },
+  { src: "/gallery/photo-11.jpg", width: 1366, height: 2049 },
+  { src: "/gallery/photo-12.jpg", width: 1366, height: 2048 },
+  { src: "/gallery/photo-13.jpg", width: 1366, height: 2049 },
+];
 
 export default function GalleryContent() {
   const { t } = useLang();
@@ -31,17 +42,14 @@ export default function GalleryContent() {
               delay={(i % 3) * 90}
               className="mb-4 break-inside-avoid overflow-hidden"
             >
-              <div
-                className={`relative w-full ${photo.tall ? "aspect-[3/4]" : "aspect-[4/3]"}`}
-              >
-                <Image
-                  src={photo.src}
-                  alt="Nataly and Christian"
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </div>
+              <Image
+                src={photo.src}
+                alt="Nataly and Christian"
+                width={photo.width}
+                height={photo.height}
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="w-full h-auto transition-transform duration-700 hover:scale-105"
+              />
             </Reveal>
           ))}
         </div>

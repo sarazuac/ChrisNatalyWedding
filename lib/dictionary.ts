@@ -58,24 +58,24 @@ const en = {
   },
 
   ourStory: {
-    kicker: "Est. 2019",
+    kicker: "Est. 2021",
     title: "Our Story",
     subtitle: "Every love story is beautiful, but ours is our favorite.",
     milestones: [
       {
-        year: "2019",
-        title: "How We Met",
-        copy: "A chance introduction through mutual friends turned into a conversation that lasted until sunrise. We knew there was something rare here almost immediately.",
-      },
-      {
         year: "2021",
-        title: "Moving In Together",
-        copy: "We found a little place near the coast and made it ours — mismatched furniture, too many houseplants, and Sunday mornings by the water.",
+        title: "How We Met",
+        copy: "We met dancing in Middleburg, Florida — one dance turned into a whole night of conversation, and neither of us looked back.",
       },
       {
-        year: "2025",
+        year: "2022",
+        title: "We Started Dating",
+        copy: "What started on the dance floor turned into something real, and we officially started dating.",
+      },
+      {
+        year: "June 2026",
         title: "The Proposal",
-        copy: "On a quiet evening walk along the shore, with the tide rolling in, one of us finally asked the question the other had been waiting to hear.",
+        copy: "One of us finally asked the question the other had been waiting to hear — and we got engaged.",
       },
       {
         year: "2027",
@@ -269,24 +269,24 @@ const es: typeof en = {
   },
 
   ourStory: {
-    kicker: "Desde 2019",
+    kicker: "Desde 2021",
     title: "Nuestra Historia",
     subtitle: "Toda historia de amor es hermosa, pero la nuestra es nuestra favorita.",
     milestones: [
       {
-        year: "2019",
-        title: "Cómo Nos Conocimos",
-        copy: "Una presentación casual entre amigos en común se convirtió en una conversación que duró hasta el amanecer. Supimos casi de inmediato que había algo especial.",
-      },
-      {
         year: "2021",
-        title: "Nos Mudamos Juntos",
-        copy: "Encontramos un lugarcito cerca de la costa y lo hicimos nuestro — muebles dispares, demasiadas plantas y mañanas de domingo junto al agua.",
+        title: "Cómo Nos Conocimos",
+        copy: "Nos conocimos bailando en Middleburg, Florida — un baile se convirtió en toda una noche de conversación, y ninguno de los dos volteó atrás.",
       },
       {
-        year: "2025",
+        year: "2022",
+        title: "Empezamos A Salir",
+        copy: "Lo que comenzó en la pista de baile se convirtió en algo real, y oficialmente comenzamos a salir.",
+      },
+      {
+        year: "Junio 2026",
         title: "La Propuesta",
-        copy: "En una tranquila caminata al atardecer por la orilla, con la marea subiendo, uno de los dos finalmente hizo la pregunta que el otro esperaba escuchar.",
+        copy: "Uno de los dos finalmente hizo la pregunta que el otro esperaba escuchar — y nos comprometimos.",
       },
       {
         year: "2027",
