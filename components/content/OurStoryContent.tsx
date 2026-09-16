@@ -34,9 +34,13 @@ export default function OurStoryContent() {
                   <h2 className="font-display italic text-3xl mb-3 text-ink">
                     {m.title}
                   </h2>
-                  <p className="text-ink-soft leading-relaxed max-w-md">
-                    {m.copy}
-                  </p>
+                  <div className="space-y-4 max-w-md">
+                    {m.copy.map((paragraph, pi) => (
+                      <p key={pi} className="text-ink-soft leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </Reveal>

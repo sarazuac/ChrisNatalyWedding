@@ -63,23 +63,35 @@ const en = {
     milestones: [
       {
         year: "September 2021",
-        title: "How We Met",
-        copy: "We met dancing in Middleburg, Florida. One dance turned into a whole night of conversation, and neither of us looked back.",
+        title: "It Started With a Dance",
+        copy: [
+          "In September 2021, two strangers met on a dance floor in Middleburg, Florida. What started with a single dance turned into more dancing, talking, laughing, and getting to know each other. Neither of us knew it that night, but something had just begun.",
+        ],
       },
       {
         year: "February 2022",
-        title: "We Started Dating",
-        copy: "What started on the dance floor turned into something real, and we officially started dating.",
+        title: "From Dancing to Dating",
+        copy: [
+          "A few months later, our connection grew into something neither of us could ignore. In February 2022, we officially started dating. What began with dancing quickly became shared adventures, countless memories, and a love that continued to grow.",
+        ],
       },
       {
         year: "June 2026",
         title: "The Proposal",
-        copy: "One of us finally asked the question the other had been waiting to hear, and we got engaged.",
+        copy: [
+          "After nearly five years of dancing through life together, we said yes to forever and became engaged in June 2026.",
+          "And just like that first dance, we took another step into something new, together.",
+        ],
       },
       {
         year: "June 2027",
         title: "Setting Sail",
-        copy: "And now, surrounded by the people we love most, we get to start the next chapter together, out at sea.",
+        copy: [
+          "Now, we're ready for our next adventure.",
+          "Surrounded by the people we love most, we'll celebrate the beginning of our marriage somewhere between the sea and the sky.",
+          "From one dance in Middleburg to saying “I do” out at sea, our story has brought us somewhere we never could have imagined.",
+          "And this is only the beginning.",
+        ],
       },
     ],
   },
@@ -230,23 +242,35 @@ const es: typeof en = {
     milestones: [
       {
         year: "Septiembre 2021",
-        title: "Cómo Nos Conocimos",
-        copy: "Nos conocimos bailando en Middleburg, Florida. Un baile se convirtió en toda una noche de conversación, y ninguno de los dos volteó atrás.",
+        title: "Todo Comenzó Con Un Baile",
+        copy: [
+          "En septiembre de 2021, dos desconocidos se conocieron en una pista de baile en Middleburg, Florida. Lo que comenzó con un solo baile se convirtió en más bailes, conversaciones, risas y ganas de conocerse mejor. Ninguno de los dos lo sabía esa noche, pero algo especial acababa de comenzar.",
+        ],
       },
       {
         year: "Febrero 2022",
-        title: "Empezamos A Salir",
-        copy: "Lo que comenzó en la pista de baile se convirtió en algo real, y oficialmente comenzamos a salir.",
+        title: "Del Baile Al Noviazgo",
+        copy: [
+          "Unos meses después, nuestra conexión se convirtió en algo que ninguno de los dos podía ignorar. En febrero de 2022, comenzamos a salir oficialmente. Lo que empezó bailando pronto se transformó en aventuras juntos, incontables recuerdos y un amor que no dejó de crecer.",
+        ],
       },
       {
         year: "Junio 2026",
         title: "El Compromiso",
-        copy: "Uno de los dos finalmente hizo la pregunta que el otro esperaba escuchar, y nos comprometimos.",
+        copy: [
+          "Después de casi cinco años bailando juntos por la vida, dijimos que sí para siempre y nos comprometimos en junio de 2026.",
+          "Y tal como aquel primer baile, dimos otro paso hacia algo nuevo, juntos.",
+        ],
       },
       {
         year: "Junio 2027",
         title: "Nos Casamos",
-        copy: "Y ahora, rodeados de las personas que más amamos, comenzamos el siguiente capítulo juntos, en alta mar.",
+        copy: [
+          "Ahora, estamos listos para nuestra próxima aventura.",
+          "Rodeados de las personas que más amamos, celebraremos el comienzo de nuestro matrimonio en algún lugar entre el mar y el cielo.",
+          "Desde un baile en Middleburg hasta decir “sí, acepto” en alta mar, nuestra historia nos ha llevado a un lugar que nunca imaginamos.",
+          "Y esto apenas comienza.",
+        ],
       },
     ],
   },
