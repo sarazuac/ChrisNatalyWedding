@@ -53,7 +53,7 @@ const en = {
   connect: {
     kicker: "Stay Connected",
     title: "Join Our Facebook Group",
-    body: "Join to stay updated on packing tips, cabin-mate coordination, and information on excursions and other discounts leading up to the cruise.",
+    body: "Join to stay updated on information about the cruise, wedding, excursions and other information.",
     button: "Join The Group",
   },
 
@@ -254,15 +254,15 @@ const es: typeof en = {
   },
 
   ctaBand: {
-    kicker: "Confirma Tu Asistencia Y Reserva Tu Camarote",
+    kicker: "Confirma Tu Asistencia Y Reserva Tu Cabina",
     title: "Esperamos que zarpes con nosotros",
-    button: "Confirmar Y Reservar Camarote",
+    button: "Confirmar Y Reservar Cabina",
   },
 
   connect: {
     kicker: "Mantente Conectado",
     title: "Únete A Nuestro Grupo De Facebook",
-    body: "Únete para mantenerte al tanto de consejos para empacar, coordinación de camarotes e información sobre excursiones y otros descuentos antes del crucero.",
+    body: "Únete para mantenerte al tanto de consejos para empacar, coordinación de cabinas e información sobre excursiones y otros descuentos antes del crucero.",
     button: "Unirme Al Grupo",
   },
 
@@ -377,15 +377,15 @@ const es: typeof en = {
       },
       {
         q: "¿Los niños son bienvenidos?",
-        a: "¡Sí! Esta es una celebración familiar en alta mar, y los niños son bienvenidos. Escríbenos si tienes preguntas sobre los camarotes para los más pequeños.",
+        a: "¡Sí! Esta es una celebración familiar en alta mar, y los niños son bienvenidos. Escríbenos si tienes preguntas sobre las cabinas para los más pequeños.",
       },
       {
         q: "¿Puedo llevar acompañante?",
         a: "Los acompañantes están indicados en tu invitación. Si tienes dudas, escríbenos y con gusto lo confirmamos.",
       },
       {
-        q: "¿Cómo reservo mi camarote?",
-        a: "Usa el formulario en nuestra página de Confirmar, el mismo formulario sirve para confirmar asistencia y reservar tu camarote dentro de nuestra reserva grupal. Los camarotes son limitados, así que responde lo antes posible.",
+        q: "¿Cómo reservo mi cabina?",
+        a: "Usa el formulario en nuestra página de Confirmar, el mismo formulario sirve para confirmar asistencia y reservar tu cabina dentro de nuestra reserva grupal. Las cabinas son limitadas, así que responde lo antes posible.",
       },
       {
         q: "¿Qué pasa si me mareo?",
@@ -404,11 +404,11 @@ const es: typeof en = {
 
   rsvp: {
     kicker: "Únete A Nosotros",
-    title: "Confirma Tu Asistencia Y Reserva Tu Camarote",
-    subtitle: "Los camarotes son limitados, por favor responde lo antes posible.",
+    title: "Confirma Tu Asistencia Y Reserva Tu Cabina",
+    subtitle: "Las cabinas son limitadas, por favor responde lo antes posible.",
     cardKicker: "Responde Aquí",
     cardTitle: "Cuéntanos Que Vienes A Bordo",
-    body: "Usa el enlace de abajo para confirmar tu asistencia y reservar tu camarote, ya que es el mismo formulario para ambos. Solo toma unos minutos y nos ayuda a finalizar nuestra reserva grupal.",
+    body: "Usa el enlace de abajo para confirmar tu asistencia y reservar tu cabina, ya que es el mismo formulario para ambos. Solo toma unos minutos y nos ayuda a finalizar nuestra reserva grupal.",
     button: "Abrir Formulario De Confirmación",
     questions: "¿Preguntas? Escríbenos a",
   },

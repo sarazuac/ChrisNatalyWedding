@@ -24,7 +24,7 @@ export default function Home() {
             <div className="absolute -inset-4 border border-sage/40 -z-10 hidden md:block" />
             <div className="relative aspect-[2/3] overflow-hidden border border-line">
               <Image
-                src="/gallery/photo-05.jpg"
+                src="/gallery/photo-06.jpg"
                 alt={`${site.partnerOne} and ${site.partnerTwo}`}
                 fill
                 sizes="(min-width: 768px) 40vw, 80vw"
@@ -118,12 +118,14 @@ export default function Home() {
           <h2 className="font-display italic text-4xl md:text-5xl mb-8 text-ink">
             {t.ctaBand.title}
           </h2>
-          <Link
-            href="/rsvp"
+          <a
+            href={site.rsvpFormUrl}
+            target="_blank"
+            rel="noreferrer"
             className="inline-block text-xs tracking-label uppercase px-8 py-4 border border-ink hover:bg-ink hover:text-sea-deep transition-colors"
           >
             {t.ctaBand.button}
-          </Link>
+          </a>
         </Reveal>
       </section>
 
@@ -143,7 +145,7 @@ export default function Home() {
             href={site.honeyfundUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-block text-xs tracking-label uppercase px-8 py-4 bg-ink text-ivory hover:bg-sage transition-colors"
+            className="inline-block text-xs tracking-label uppercase px-8 py-4 bg-sage text-ink hover:bg-[#4a5c42] hover:text-ivory transition-colors"
           >
             {t.registry.button}
           </a>

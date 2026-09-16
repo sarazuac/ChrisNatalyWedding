@@ -18,6 +18,7 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.natalyandchris.com"),
   title: `${site.partnerOne} & ${site.partnerTwo} | ${site.weddingDateDisplayEn}`,
   description: `Join us as we celebrate the wedding of ${site.partnerOne} and ${site.partnerTwo}, ${site.weddingDateDisplayEn}, aboard an MSC Cruises Caribbean & Bahamas voyage.`,
 };

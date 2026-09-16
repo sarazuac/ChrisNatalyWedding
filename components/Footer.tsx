@@ -26,12 +26,14 @@ export default function Footer() {
               {t.nav[item.key]}
             </Link>
           ))}
-          <Link
-            href="/rsvp"
+          <a
+            href={site.rsvpFormUrl}
+            target="_blank"
+            rel="noreferrer"
             className="text-[11px] tracking-label uppercase text-ink font-medium hover:opacity-70 transition-opacity"
           >
             {t.nav.rsvp}
-          </Link>
+          </a>
           <a
             href={site.facebookGroupUrl}
             target="_blank"

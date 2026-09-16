@@ -28,7 +28,7 @@ export default function RegistryContent() {
             href={site.honeyfundUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-block text-xs tracking-label uppercase px-10 py-4 bg-ink text-ivory hover:bg-sage transition-colors"
+            className="inline-block text-xs tracking-label uppercase px-10 py-4 bg-sage text-ink hover:bg-[#4a5c42] hover:text-ivory transition-colors"
           >
             {t.registry.button}
           </a>

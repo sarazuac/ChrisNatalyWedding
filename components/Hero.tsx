@@ -39,6 +39,15 @@ export default function Hero() {
         <p className="mt-3 text-ivory/70 text-sm md:text-base">
           {t.hero.aboard}
         </p>
+
+        <a
+          href={site.rsvpFormUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-10 inline-block text-xs tracking-label uppercase px-9 py-4 bg-sage text-ink hover:bg-ivory transition-colors"
+        >
+          {t.ctaBand.button}
+        </a>
       </div>
 
       <div className="absolute bottom-8 inset-x-0 z-10 flex flex-col items-center gap-2 text-ivory/70">

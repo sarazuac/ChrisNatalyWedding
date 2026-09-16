@@ -52,8 +52,10 @@ export default function Nav() {
               {t.nav[item.key]}
             </Link>
           ))}
-          <Link
-            href="/rsvp"
+          <a
+            href={site.rsvpFormUrl}
+            target="_blank"
+            rel="noreferrer"
             className={`shrink-0 whitespace-nowrap text-[11px] tracking-label uppercase px-5 py-2.5 border transition-colors ${
               solid
                 ? "border-ink text-ink hover:bg-ink hover:text-ivory"
@@ -61,7 +63,7 @@ export default function Nav() {
             }`}
           >
             {t.nav.rsvp}
-          </Link>
+          </a>
           <div className="shrink-0">
             <LanguageToggle dark={!solid} />
           </div>
@@ -113,13 +115,15 @@ export default function Nav() {
                 {t.nav[item.key]}
               </Link>
             ))}
-            <Link
-              href="/rsvp"
+            <a
+              href={site.rsvpFormUrl}
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setOpen(false)}
               className="mt-4 text-xs tracking-label uppercase px-7 py-3 border border-ink text-ink"
             >
               {t.nav.rsvp}
-            </Link>
+            </a>
 
             <div className="mt-6 flex flex-col items-center gap-3">
               <span className="text-[10px] tracking-label uppercase text-ink-soft">
