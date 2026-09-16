@@ -56,7 +56,15 @@ export default function ShipContent() {
           <p className="text-xs text-ink-soft max-w-md mx-auto">{t.ship.note}</p>
         </Reveal>
 
-        <Reveal className="text-center mt-14">
+        <Reveal className="flex flex-wrap justify-center gap-x-10 gap-y-4 mt-6">
+          <a
+            href={site.mscShipUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="text-[11px] tracking-label uppercase text-ink border-b border-ink pb-1 hover:text-sage hover:border-sage transition-colors"
+          >
+            {t.ship.officialLink}
+          </a>
           <Link
             href="/travel"
             className="text-[11px] tracking-label uppercase text-ink border-b border-ink pb-1 hover:text-sage hover:border-sage transition-colors"

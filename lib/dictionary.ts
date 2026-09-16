@@ -9,7 +9,6 @@ const en = {
     ship: "The Ship",
     travel: "Travel",
     registry: "Registry",
-    faq: "FAQ",
     rsvp: "RSVP",
   },
   langToggle: { en: "EN", es: "ES", label: "Language" },
@@ -113,13 +112,13 @@ const en = {
         copy: "A spa, casino, and lounges onboard for whenever you want to slow down.",
       },
     ],
-    note: "Onboard venues and amenities are set by MSC Cruises and may change. Visit msccruisesusa.com for the most current ship details.",
+    note: "Onboard venues and amenities are set by MSC Cruises and may change.",
+    officialLink: "View Official Ship Details",
   },
 
   travel: {
     kicker: "Getting Here",
     title: "Travel & Itinerary",
-    subtitle: "Everything you need to know before we set sail.",
     embarkKicker: "Embarkation",
     embarkPortLabel: "Departure Port",
     mapLink: "View Map",
@@ -140,9 +139,6 @@ const en = {
       wed: "Wednesday",
       thu: "Thursday",
     },
-    goodToKnowKicker: "Good To Know",
-    goodToKnowTitle: "Documents & Packing",
-    goodToKnowBody: "A passport valid at least 6 months past our return date is strongly recommended for all guests, even on closed-loop sailings. Pack layers, since it's breezy on deck, and don't forget sunscreen for our days in Nassau and Ocean Cay.",
   },
 
   registry: {
@@ -152,45 +148,7 @@ const en = {
     cardTitle: "Contribute To Our Honeyfund",
     cardBody: "Whether it's a little or a lot, every gift helps us kick off married life with new adventures. Thank you for being part of our story.",
     button: "Give A Gift",
-  },
-
-  faq: {
-    kicker: "Good To Know",
-    title: "Frequently Asked Questions",
-    items: [
-      {
-        q: "What should I wear?",
-        a: "Resort casual by day, and elegant cocktail attire for our formal night onboard. Layers are a good idea, since it can get breezy on deck in the evenings.",
-      },
-      {
-        q: "Do I need a passport?",
-        a: "Yes, we strongly recommend a passport valid at least 6 months past our return date, even though this is a closed-loop sailing from a U.S. port.",
-      },
-      {
-        q: "Are kids welcome?",
-        a: "Yes! This is a family celebration at sea, and kids are welcome to sail with us. Reach out if you have questions about cabin arrangements for little ones.",
-      },
-      {
-        q: "Can I bring a plus-one?",
-        a: "Plus-ones are noted on your invitation. If you're unsure, feel free to reach out and we'll happily confirm.",
-      },
-      {
-        q: "How do I book my cabin?",
-        a: "Use the RSVP form on our RSVP page, which doubles as our group's cabin reservation form. Cabins are limited, so please reply as soon as you're able.",
-      },
-      {
-        q: "What if I get seasick?",
-        a: "The ship is very stable, but if you're prone to motion sickness, we recommend packing over-the-counter sea sickness bands or medication just in case.",
-      },
-      {
-        q: "What's the full itinerary?",
-        a: "We sail round-trip from Port Canaveral, with stops in Nassau, Bahamas and Ocean Cay MSC Marine Reserve. See the Travel page for the full day-by-day schedule.",
-      },
-      {
-        q: "Who can I contact with more questions?",
-        a: "Reach out any time, we're happy to help, and you can also ask in our Facebook group.",
-      },
-    ],
+    feeNote: "Heads up: Honeyfund adds an optional support fee at checkout. Feel free to click \"Support Honeyfund Gives\" and remove it, it won't affect your gift to us.",
   },
 
   rsvp: {
@@ -218,7 +176,6 @@ const es: typeof en = {
     ship: "El Barco",
     travel: "Viaje",
     registry: "Mesa de Regalos",
-    faq: "Preguntas",
     rsvp: "Confirmar",
   },
   langToggle: { en: "EN", es: "ES", label: "Idioma" },
@@ -322,13 +279,13 @@ const es: typeof en = {
         copy: "Spa, casino y salones a bordo para cuando quieras bajar el ritmo.",
       },
     ],
-    note: "Las instalaciones y servicios a bordo son definidos por MSC Cruises y pueden cambiar. Visita msccruisesusa.com para la información más actualizada del barco.",
+    note: "Las instalaciones y servicios a bordo son definidos por MSC Cruises y pueden cambiar.",
+    officialLink: "Ver Detalles Oficiales Del Barco",
   },
 
   travel: {
     kicker: "Cómo Llegar",
     title: "Viaje E Itinerario",
-    subtitle: "Todo lo que necesitas saber antes de zarpar.",
     embarkKicker: "Embarque",
     embarkPortLabel: "Puerto De Salida",
     mapLink: "Ver Mapa",
@@ -349,9 +306,6 @@ const es: typeof en = {
       wed: "Miércoles",
       thu: "Jueves",
     },
-    goodToKnowKicker: "Bueno Saber",
-    goodToKnowTitle: "Documentos Y Equipaje",
-    goodToKnowBody: "Se recomienda encarecidamente un pasaporte válido al menos 6 meses después de nuestra fecha de regreso, incluso tratándose de un crucero de ida y vuelta desde un puerto de EE. UU. Empaca capas de ropa, ya que hay brisa en cubierta, y no olvides el protector solar para nuestros días en Nassau y Ocean Cay.",
   },
 
   registry: {
@@ -361,45 +315,7 @@ const es: typeof en = {
     cardTitle: "Contribuye A Nuestro Honeyfund",
     cardBody: "Ya sea poco o mucho, cada regalo nos ayuda a comenzar nuestra vida de casados con nuevas aventuras. Gracias por ser parte de nuestra historia.",
     button: "Dar Un Regalo",
-  },
-
-  faq: {
-    kicker: "Bueno Saber",
-    title: "Preguntas Frecuentes",
-    items: [
-      {
-        q: "¿Qué debo usar?",
-        a: "Casual de resort durante el día y elegante de cóctel para nuestra noche formal a bordo. Te recomendamos traer capas de ropa, ya que puede haber brisa en cubierta por las noches.",
-      },
-      {
-        q: "¿Necesito pasaporte?",
-        a: "Sí, recomendamos encarecidamente un pasaporte válido al menos 6 meses después de nuestra fecha de regreso, aunque este es un crucero de ida y vuelta desde un puerto de EE. UU.",
-      },
-      {
-        q: "¿Los niños son bienvenidos?",
-        a: "¡Sí! Esta es una celebración familiar en alta mar, y los niños son bienvenidos. Escríbenos si tienes preguntas sobre las cabinas para los más pequeños.",
-      },
-      {
-        q: "¿Puedo llevar acompañante?",
-        a: "Los acompañantes están indicados en tu invitación. Si tienes dudas, escríbenos y con gusto lo confirmamos.",
-      },
-      {
-        q: "¿Cómo reservo mi cabina?",
-        a: "Usa el formulario en nuestra página de Confirmar, el mismo formulario sirve para confirmar asistencia y reservar tu cabina dentro de nuestra reserva grupal. Las cabinas son limitadas, así que responde lo antes posible.",
-      },
-      {
-        q: "¿Qué pasa si me mareo?",
-        a: "El barco es muy estable, pero si eres propenso al mareo, te recomendamos empacar bandas o medicamentos para el mareo por si acaso.",
-      },
-      {
-        q: "¿Cuál es el itinerario completo?",
-        a: "Zarpamos ida y vuelta desde Port Canaveral, con paradas en Nassau, Bahamas y Ocean Cay MSC Marine Reserve. Consulta la página de Viaje para ver el itinerario completo día por día.",
-      },
-      {
-        q: "¿Con quién puedo hablar si tengo más preguntas?",
-        a: "Escríbenos cuando quieras, con gusto te ayudamos, y también puedes preguntar en nuestro grupo de Facebook.",
-      },
-    ],
+    feeNote: "Nota: Honeyfund agrega una tarifa de apoyo opcional al pagar. Si prefieres, puedes hacer clic en \"Support Honeyfund Gives\" para quitarla, esto no afecta tu regalo.",
   },
 
   rsvp: {

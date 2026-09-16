@@ -12,11 +12,7 @@ export default function TravelContent() {
 
   return (
     <>
-      <PageHeader
-        kicker={t.travel.kicker}
-        title={t.travel.title}
-        subtitle={t.travel.subtitle}
-      />
+      <PageHeader kicker={t.travel.kicker} title={t.travel.title} />
 
       {/* Embarkation */}
       <section className="bg-ivory py-24 px-6">
@@ -120,21 +116,6 @@ export default function TravelContent() {
         <Reveal className="text-center mt-8">
           <p className="text-xs text-ink-soft max-w-lg mx-auto">
             {t.travel.itineraryNote}
-          </p>
-        </Reveal>
-      </section>
-
-      {/* Good to know */}
-      <section className="bg-sand py-24 px-6">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-[11px] tracking-label uppercase text-sage mb-4">
-            {t.travel.goodToKnowKicker}
-          </p>
-          <h2 className="font-display italic text-3xl md:text-4xl mb-6 text-ink">
-            {t.travel.goodToKnowTitle}
-          </h2>
-          <p className="text-ink-soft leading-relaxed">
-            {t.travel.goodToKnowBody}
           </p>
         </Reveal>
       </section>

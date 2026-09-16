@@ -14,6 +14,7 @@ export const site = {
 
   cruiseLine: "MSC Cruises",
   cruiseShip: "MSC Seashore",
+  mscShipUrl: "https://www.msccruisesusa.com/cruise/ships/msc-seashore",
   embarkPort: "Port Canaveral (Orlando), Florida",
 
   // Replace with your real Google Form link if it ever changes.
@@ -68,6 +69,5 @@ export const site = {
     { href: "/ship", key: "ship" },
     { href: "/travel", key: "travel" },
     { href: "/registry", key: "registry" },
-    { href: "/faq", key: "faq" },
   ] as const,
 } as const;

@@ -149,6 +149,9 @@ export default function Home() {
           >
             {t.registry.button}
           </a>
+          <p className="mt-6 text-xs text-ink-soft max-w-sm mx-auto">
+            {t.registry.feeNote}
+          </p>
         </Reveal>
       </section>
 
