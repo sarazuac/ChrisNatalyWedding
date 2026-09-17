@@ -85,7 +85,7 @@ const en = {
       },
       {
         year: "June 2027",
-        title: "Setting Sail",
+        title: "The Wedding",
         copy: [
           "Now, we're ready for our next adventure.",
           "Surrounded by the people we love most, we'll celebrate the beginning of our marriage somewhere between the sea and the sky.",
