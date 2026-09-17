@@ -48,6 +48,15 @@ export default function TravelContent() {
             </p>
           </Reveal>
         </div>
+
+        <Reveal className="mx-auto max-w-4xl mt-px bg-sage text-ink text-center p-10 md:p-14">
+          <p className="text-[11px] tracking-label uppercase mb-4">
+            {t.travel.ceremonyBadge}
+          </p>
+          <p className="font-display italic text-2xl md:text-3xl leading-relaxed max-w-2xl mx-auto">
+            {t.travel.ceremonyNote}
+          </p>
+        </Reveal>
       </section>
 
       {/* Itinerary */}
@@ -93,14 +102,26 @@ export default function TravelContent() {
             </thead>
             <tbody>
               {site.itinerary.map((stop) => (
-                <tr key={stop.date} className="border-b border-line last:border-0">
+                <tr
+                  key={stop.date}
+                  className={`border-b border-line last:border-0 ${
+                    stop.ceremony ? "bg-sage/15" : ""
+                  }`}
+                >
                   <td className="py-4 px-4 font-display italic text-ink whitespace-nowrap">
                     {t.travel.days[stop.day]}
                   </td>
                   <td className="py-4 px-4 text-ink-soft whitespace-nowrap">
                     {stop.date}
                   </td>
-                  <td className="py-4 px-4 text-ink-soft">{stop.port}</td>
+                  <td className="py-4 px-4 text-ink-soft">
+                    {stop.port}
+                    {stop.ceremony && (
+                      <span className="ml-2 inline-block align-middle text-[9px] tracking-label uppercase px-2 py-0.5 bg-sage text-ink whitespace-nowrap">
+                        {t.travel.ceremonyBadge}
+                      </span>
+                    )}
+                  </td>
                   <td className="py-4 px-4 text-ink-soft whitespace-nowrap">
                     {stop.arrival}
                   </td>

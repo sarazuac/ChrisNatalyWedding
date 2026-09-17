@@ -29,6 +29,7 @@ export const site = {
       port: "Port Canaveral (Orlando), Florida",
       arrival: "–",
       departure: "16:00",
+      ceremony: false,
     },
     {
       day: "mon",
@@ -36,6 +37,7 @@ export const site = {
       port: "Nassau, Bahamas",
       arrival: "09:00",
       departure: "18:00",
+      ceremony: false,
     },
     {
       day: "tue",
@@ -43,6 +45,7 @@ export const site = {
       port: "Ocean Cay MSC Marine Reserve, Bahamas",
       arrival: "08:00",
       departure: "23:59",
+      ceremony: true,
     },
     {
       day: "wed",
@@ -50,6 +53,7 @@ export const site = {
       port: "Ocean Cay MSC Marine Reserve, Bahamas",
       arrival: "00:01",
       departure: "12:00",
+      ceremony: false,
     },
     {
       day: "thu",
@@ -57,6 +61,7 @@ export const site = {
       port: "Port Canaveral (Orlando), Florida",
       arrival: "07:00",
       departure: "–",
+      ceremony: false,
     },
   ],
 

@@ -137,6 +137,8 @@ const en = {
     itineraryKicker: "Full Itinerary",
     itineraryTitle: "Caribbean & Bahamas",
     itineraryNote: "Information subject to change due to final availability of berth or anchorage.",
+    ceremonyBadge: "Ceremony Day",
+    ceremonyNote: "Our wedding ceremony will take place on Tuesday, June 8 at 4:00 PM on Ocean Cay, MSC's private island, with dinner to follow.",
     tableHeaders: {
       day: "Day",
       date: "Date",
@@ -316,6 +318,8 @@ const es: typeof en = {
     itineraryKicker: "Itinerario Completo",
     itineraryTitle: "Caribe Y Bahamas",
     itineraryNote: "La información está sujeta a cambios según la disponibilidad final de atraque o anclaje.",
+    ceremonyBadge: "Día De La Ceremonia",
+    ceremonyNote: "Nuestra ceremonia de boda será el martes 8 de junio a las 4:00 PM en Ocean Cay, la isla privada de MSC, seguida de la cena.",
     tableHeaders: {
       day: "Día",
       date: "Fecha",
